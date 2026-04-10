@@ -6,11 +6,11 @@
   <body>
     <a-scene>
     
-       <!-- Camera -->
+       // Camera and Background
       <a-camera position="0 1.6 5"></a-camera>
       <a-sky src="Assets/background-labweek12.jpg"></a-sky>
 
-      <!-- Ice Cream Cone -->
+      // Ice Cream Cone 
       <a-cone 
         position="0 0 -3"
         radius-bottom="0.5"
@@ -23,6 +23,31 @@
         radius="0.7"
         material="src: Assets/texture3.jpg; shader: flat">
       </a-sphere> 
+      
+      //Ground 
+      <a-plane 
+        position="0 0 -4"
+        rotation="-90 0 0"
+        width="10"
+        height="10"
+        material="src: Assets/texture1.jpg; shader: flat">
+      </a-plane>
+
+      // Umbrella 
+      <a-cylinder 
+        position="2 0.75 -3"
+        radius="0.1"
+        height="1.5"
+        material="src: Assets/texture4.jpg; shader: flat">
+      </a-cylinder>
+
+      <a-cone 
+        position="2 1.75 -3"
+        radius-bottom="1"
+        height="1"
+        material="src: Assets/texture3.jpg; shader: flat">
+      </a-cone>
+
 
     </a-scene>
   </body> 
